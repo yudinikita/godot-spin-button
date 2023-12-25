@@ -1,5 +1,7 @@
 extends Control
 
+const GITHUB_LINK := "https://github.com/nblackninja/godot-spin-button"
+
 var sb_manip: SBSpinButton
 var te_idx: TextEdit
 var te_item: TextEdit
@@ -12,7 +14,7 @@ func _ready():
 
 
 func _on_github_button_pressed():
-	OS.shell_open("https://github.com/")
+	OS.shell_open(GITHUB_LINK)
 
 
 func _on_append_button_pressed():
