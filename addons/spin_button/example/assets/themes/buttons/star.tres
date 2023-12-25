@@ -1,0 +1,78 @@
+[gd_resource type="Theme" load_steps=15 format=3 uid="uid://ds4ly0a5mkv7e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1g1q"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88lif"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xecm"]
+bg_color = Color(0.235294, 0.282353, 0.305882, 1)
+
+[sub_resource type="ImageTexture" id="ImageTexture_biv6l"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_jpvqa"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_0qm74"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_vhgd0"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_aenh6"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_3p6ws"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o7fxy"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0pffp"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_342oj"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hrocs"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0oh7w"]
+content_margin_top = 2.0
+content_margin_bottom = 2.0
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxFlat_f1g1q")
+Button/styles/hover = SubResource("StyleBoxFlat_88lif")
+Button/styles/normal = SubResource("StyleBoxFlat_0xecm")
+HSlider/icons/grabber = SubResource("ImageTexture_biv6l")
+HSlider/icons/grabber_disabled = SubResource("ImageTexture_jpvqa")
+HSlider/icons/grabber_highlight = SubResource("ImageTexture_0qm74")
+SBNextNav/base_type = &"Button"
+SBNextNav/colors/icon_disabled_color = Color(0, 0, 0, 0)
+SBNextNav/colors/icon_focus_color = Color(0, 0, 0, 1)
+SBNextNav/colors/icon_hover_color = Color(0, 0, 0, 1)
+SBNextNav/colors/icon_normal_color = Color(1, 1, 1, 1)
+SBPrevNav/base_type = &"Button"
+SBPrevNav/colors/icon_disabled_color = Color(0, 0, 0, 0)
+SBPrevNav/colors/icon_focus_color = Color(0, 0, 0, 1)
+SBPrevNav/colors/icon_hover_color = Color(0, 0, 0, 1)
+SBPrevNav/colors/icon_normal_color = Color(1, 1, 1, 1)
+SBSlider/base_type = &"HSlider"
+SBSlider/icons/grabber = SubResource("ImageTexture_vhgd0")
+SBSlider/icons/grabber_disabled = SubResource("ImageTexture_aenh6")
+SBSlider/icons/grabber_highlight = SubResource("ImageTexture_3p6ws")
+SBSlider/styles/grabber_area = SubResource("StyleBoxFlat_o7fxy")
+SBSlider/styles/grabber_area_focus = SubResource("StyleBoxFlat_0pffp")
+SBSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_342oj")
+SBSlider/styles/grabber_area_hover = SubResource("StyleBoxFlat_hrocs")
+SBSlider/styles/slider = SubResource("StyleBoxFlat_0oh7w")
+SBTitle/base_type = &"RichTextLabel"
+SBTitle/colors/default_color = Color(1, 1, 1, 1)
+SBTitle/colors/font_focus_color = Color(0, 0, 0, 1)
+SBTitle/colors/font_hover_color = Color(0, 0, 0, 1)
+SBTitle/font_sizes/normal_font_size = 20
+SBValue/base_type = &"RichTextLabel"
+SBValue/colors/default_color = Color(1, 1, 1, 1)
+SBValue/colors/font_focus_color = Color(0, 0, 0, 1)
+SBValue/colors/font_hover_color = Color(0, 0, 0, 1)
+SBValue/font_sizes/normal_font_size = 20
+SBWrapper/base_type = &"MarginContainer"
+SBWrapper/constants/margin_left = 20
+SBWrapper/constants/margin_right = 20

@@ -1,0 +1,54 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://dvsa2fxdonpir"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0d2a"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0d5i6"]
+bg_color = Color(0.94, 0.94, 0.94, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bk01o"]
+bg_color = Color(0, 0, 0, 0.3)
+
+[sub_resource type="ImageTexture" id="ImageTexture_isyv2"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_wt5kq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f7hop"]
+bg_color = Color(0.666667, 0.784314, 0.921569, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0002t"]
+bg_color = Color(0.666667, 0.784314, 0.921569, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vxceg"]
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.541176, 0.572549, 0.611765, 1)
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxFlat_g0d2a")
+Button/styles/hover = SubResource("StyleBoxFlat_0d5i6")
+Button/styles/normal = SubResource("StyleBoxFlat_bk01o")
+HSlider/icons/grabber = SubResource("ImageTexture_isyv2")
+HSlider/icons/grabber_highlight = SubResource("ImageTexture_wt5kq")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_f7hop")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_0002t")
+HSlider/styles/slider = SubResource("StyleBoxFlat_vxceg")
+SBNextNav/colors/icon_disabled_color = Color(0, 0, 0, 0.47451)
+SBNextNav/colors/icon_focus_color = Color(0, 0, 0, 1)
+SBNextNav/colors/icon_hover_color = Color(0, 0, 0, 1)
+SBNextNav/colors/icon_normal_color = Color(1, 1, 1, 1)
+SBPrevNav/colors/icon_disabled_color = Color(0, 0, 0, 0.47451)
+SBPrevNav/colors/icon_focus_color = Color(0, 0, 0, 1)
+SBPrevNav/colors/icon_hover_color = Color(0, 0, 0, 1)
+SBPrevNav/colors/icon_normal_color = Color(1, 1, 1, 1)
+SBTitle/colors/default_color = Color(1, 1, 1, 1)
+SBTitle/colors/font_focus_color = Color(0, 0, 0, 1)
+SBTitle/colors/font_hover_color = Color(0, 0, 0, 1)
+SBValue/colors/default_color = Color(1, 1, 1, 1)
+SBValue/colors/font_focus_color = Color(0, 0, 0, 1)
+SBValue/colors/font_hover_color = Color(0, 0, 0, 1)
+SBWrapper/base_type = &"MarginContainer"
+SBWrapper/constants/margin_bottom = 12
+SBWrapper/constants/margin_left = 12
+SBWrapper/constants/margin_right = 12
+SBWrapper/constants/margin_top = 12

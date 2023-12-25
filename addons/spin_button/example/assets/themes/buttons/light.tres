@@ -1,0 +1,96 @@
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://d2gu67d636rc3"]
+
+[ext_resource type="SystemFont" uid="uid://bgar44hr8rj57" path="res://addons/spin_button/example/assets/fonts/bold_system_font.tres" id="1_6c38v"]
+[ext_resource type="Texture2D" uid="uid://b2bhb0dstni1b" path="res://addons/spin_button/example/assets/icons/buttons/bg_light.png" id="1_wohfl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1luep"]
+texture = ExtResource("1_wohfl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3cl7r"]
+texture = ExtResource("1_wohfl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g7yvt"]
+texture = ExtResource("1_wohfl")
+modulate_color = Color(1, 1, 1, 0.2)
+
+[sub_resource type="ImageTexture" id="ImageTexture_06tyc"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_o783v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v8ulf"]
+bg_color = Color(0.584314, 0.47451, 0.345098, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_plcid"]
+bg_color = Color(0.729412, 0.592157, 0.431373, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_446ni"]
+content_margin_top = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.278431, 0.298039, 0.317647, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i3tas"]
+content_margin_top = 7.0
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxTexture_1luep")
+Button/styles/hover = SubResource("StyleBoxTexture_3cl7r")
+Button/styles/normal = SubResource("StyleBoxTexture_g7yvt")
+HSlider/icons/grabber = SubResource("ImageTexture_06tyc")
+HSlider/icons/grabber_highlight = SubResource("ImageTexture_o783v")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_v8ulf")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_plcid")
+HSlider/styles/slider = SubResource("StyleBoxFlat_446ni")
+SBNextNav/colors/icon_disabled_color = Color(1, 0.807843, 0.615686, 0.6)
+SBNextNav/colors/icon_focus_color = Color(1, 0.807843, 0.615686, 1)
+SBNextNav/colors/icon_hover_color = Color(1, 0.807843, 0.615686, 1)
+SBNextNav/colors/icon_normal_color = Color(1, 0.807843, 0.615686, 1)
+SBPrevNav/colors/icon_disabled_color = Color(1, 0.807843, 0.615686, 0.6)
+SBPrevNav/colors/icon_focus_color = Color(1, 0.807843, 0.615686, 1)
+SBPrevNav/colors/icon_hover_color = Color(1, 0.807843, 0.615686, 1)
+SBPrevNav/colors/icon_normal_color = Color(1, 0.807843, 0.615686, 1)
+SBSliderValue/base_type = &"RichTextLabel"
+SBSliderValue/colors/default_color = Color(0.701961, 0.54902, 0.403922, 1)
+SBSliderValue/colors/font_focus_color = Color(1, 0.807843, 0.615686, 1)
+SBSliderValue/colors/font_hover_color = Color(1, 0.807843, 0.615686, 1)
+SBSliderValue/font_sizes/normal_font_size = 24
+SBSliderValue/fonts/normal_font = ExtResource("1_6c38v")
+SBSliderValue/styles/normal = SubResource("StyleBoxEmpty_i3tas")
+SBTitle/base_type = &"RichTextLabel"
+SBTitle/colors/default_color = Color(0.701961, 0.54902, 0.403922, 1)
+SBTitle/colors/font_focus_color = Color(1, 0.807843, 0.615686, 1)
+SBTitle/colors/font_hover_color = Color(1, 0.807843, 0.615686, 1)
+SBTitle/font_sizes/normal_font_size = 24
+SBTitle/fonts/normal_font = ExtResource("1_6c38v")
+SBValue/base_type = &"RichTextLabel"
+SBValue/colors/default_color = Color(0.701961, 0.54902, 0.403922, 1)
+SBValue/colors/font_focus_color = Color(1, 0.807843, 0.615686, 1)
+SBValue/colors/font_hover_color = Color(1, 0.807843, 0.615686, 1)
+SBValue/font_sizes/normal_font_size = 24
+SBValue/fonts/normal_font = ExtResource("1_6c38v")
+SBWrapper/base_type = &"MarginContainer"
+SBWrapper/constants/margin_left = 15
+SBWrapper/constants/margin_right = 15

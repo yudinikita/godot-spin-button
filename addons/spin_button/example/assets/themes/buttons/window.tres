@@ -1,0 +1,81 @@
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://bk53obtxedpfj"]
+
+[ext_resource type="Texture2D" uid="uid://bbqdfdv4vq6r0" path="res://addons/spin_button/example/assets/icons/buttons/grabbers/grabber_window.png" id="1_pvovm"]
+[ext_resource type="Texture2D" uid="uid://cwidxmldqmson" path="res://addons/spin_button/example/assets/icons/buttons/grabbers/grabber_window_h.png" id="2_cjh5a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4g77a"]
+bg_color = Color(0.160784, 0.168627, 0.180392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2dtwx"]
+bg_color = Color(0.192157, 0.196078, 0.207843, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ckss0"]
+bg_color = Color(0.160784, 0.168627, 0.180392, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sx70c"]
+bg_color = Color(0.541176, 0.737255, 0.87451, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k723p"]
+bg_color = Color(0.541176, 0.737255, 0.87451, 0.490196)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwllp"]
+content_margin_top = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.619608, 0.623529, 0.627451, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u0wuk"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxFlat_4g77a")
+Button/styles/hover = SubResource("StyleBoxFlat_2dtwx")
+Button/styles/normal = SubResource("StyleBoxFlat_ckss0")
+HSlider/icons/grabber = ExtResource("1_pvovm")
+HSlider/icons/grabber_highlight = ExtResource("2_cjh5a")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_sx70c")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_k723p")
+HSlider/styles/slider = SubResource("StyleBoxFlat_nwllp")
+SBDesc/base_type = &"RichTextLabel"
+SBDesc/colors/default_color = Color(0.815686, 0.815686, 0.819608, 1)
+SBDesc/colors/font_focus_color = Color(0.815686, 0.815686, 0.819608, 1)
+SBDesc/colors/font_hover_color = Color(0.815686, 0.815686, 0.819608, 1)
+SBDesc/font_sizes/normal_font_size = 12
+SBLeftIcon/base_type = &"Button"
+SBLeftIcon/styles/normal = SubResource("StyleBoxEmpty_u0wuk")
+SBSliderValue/base_type = &"RichTextLabel"
+SBSliderValue/colors/default_color = Color(0.737255, 0.737255, 0.741176, 1)
+SBSliderValue/colors/font_focus_color = Color(0.988235, 0.988235, 1, 1)
+SBSliderValue/colors/font_hover_color = Color(0.988235, 0.988235, 1, 1)
+SBTitle/base_type = &"RichTextLabel"
+SBTitle/font_sizes/normal_font_size = 14
+SBWrapper/base_type = &"MarginContainer"
+SBWrapper/constants/margin_right = 16

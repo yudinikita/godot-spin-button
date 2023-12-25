@@ -1,0 +1,73 @@
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://8e4f046r687q"]
+
+[ext_resource type="Texture2D" uid="uid://bsigcxwo8jr7p" path="res://addons/spin_button/example/assets/icons/buttons/bg_spider.png" id="1_ipv8j"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_px0ed"]
+texture = ExtResource("1_ipv8j")
+modulate_color = Color(0.152941, 0.329412, 0.32549, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mqyhy"]
+texture = ExtResource("1_ipv8j")
+modulate_color = Color(0.152941, 0.329412, 0.32549, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6og12"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_4s1uv"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_wi167"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcx31"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ph02"]
+bg_color = Color(0.988235, 0.764706, 0.262745, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n5r26"]
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.247059, 0.254902, 0.25098, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.439216, 0.435294, 0.458824, 1)
+anti_aliasing = false
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxTexture_px0ed")
+Button/styles/hover = SubResource("StyleBoxTexture_mqyhy")
+Button/styles/normal = SubResource("StyleBoxEmpty_6og12")
+HSlider/icons/grabber = SubResource("ImageTexture_4s1uv")
+HSlider/icons/grabber_highlight = SubResource("ImageTexture_wi167")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_dcx31")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_0ph02")
+HSlider/styles/slider = SubResource("StyleBoxFlat_n5r26")
+SBContent/base_type = &"Button"
+SBNextNav/base_type = &"Button"
+SBNextNav/colors/icon_disabled_color = Color(0.215686, 0.188235, 0.109804, 1)
+SBNextNav/colors/icon_focus_color = Color(0.988235, 0.764706, 0.262745, 1)
+SBNextNav/colors/icon_hover_color = Color(0.988235, 0.764706, 0.262745, 1)
+SBNextNav/colors/icon_normal_color = Color(0.215686, 0.188235, 0.109804, 1)
+SBPrevNav/base_type = &"Button"
+SBPrevNav/colors/icon_disabled_color = Color(0.215686, 0.188235, 0.109804, 1)
+SBPrevNav/colors/icon_focus_color = Color(0.988235, 0.764706, 0.262745, 1)
+SBPrevNav/colors/icon_hover_color = Color(0.988235, 0.764706, 0.262745, 1)
+SBPrevNav/colors/icon_normal_color = Color(0.988235, 0.764706, 0.262745, 1)
+SBRightIcon/base_type = &"Button"
+SBRightIcon/colors/icon_normal_color = Color(0.843137, 0.631373, 0.160784, 1)
+SBRightIcon/constants/icon_max_width = 12
+SBSliderValue/base_type = &"RichTextLabel"
+SBSliderValue/colors/default_color = Color(1, 1, 1, 1)
+SBSliderValue/colors/font_focus_color = Color(0.666667, 0.960784, 0.941176, 1)
+SBSliderValue/colors/font_hover_color = Color(0.666667, 0.960784, 0.941176, 1)
+SBTitle/base_type = &"RichTextLabel"
+SBTitle/colors/default_color = Color(0.960784, 0.960784, 0.960784, 1)
+SBTitle/colors/font_focus_color = Color(0.666667, 0.960784, 0.941176, 1)
+SBTitle/colors/font_hover_color = Color(0.666667, 0.960784, 0.941176, 1)
+SBValue/base_type = &"RichTextLabel"
+SBValue/colors/default_color = Color(1, 1, 1, 1)
+SBValue/colors/font_focus_color = Color(0.666667, 0.960784, 0.941176, 1)
+SBValue/colors/font_hover_color = Color(0.666667, 0.960784, 0.941176, 1)
+SBWrapper/base_type = &"MarginContainer"
+SBWrapper/constants/margin_left = 50
+SBWrapper/constants/margin_right = 10

@@ -1,0 +1,51 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://bagcq2ypjsjx0"]
+
+[ext_resource type="Texture2D" uid="uid://b1bwanh2kjq2u" path="res://addons/spin_button/example/assets/icons/buttons/grabbers/grabber_fort.png" id="1_immip"]
+[ext_resource type="SystemFont" uid="uid://bd4un84ep4ut8" path="res://addons/spin_button/example/assets/fonts/heavy_system_font.tres" id="1_qukq1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_klw5n"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_71k5n"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tfuek"]
+bg_color = Color(0.0941176, 0.196078, 0.447059, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sd218"]
+bg_color = Color(0.215686, 0.701961, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gj867"]
+bg_color = Color(0.215686, 0.701961, 0.956863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hyfom"]
+content_margin_top = 25.0
+content_margin_bottom = 25.0
+bg_color = Color(0.105882, 0.129412, 0.196078, 1)
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxFlat_klw5n")
+Button/styles/hover = SubResource("StyleBoxFlat_71k5n")
+Button/styles/normal = SubResource("StyleBoxFlat_tfuek")
+HSlider/icons/grabber = ExtResource("1_immip")
+HSlider/icons/grabber_highlight = ExtResource("1_immip")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_sd218")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_gj867")
+HSlider/styles/slider = SubResource("StyleBoxFlat_hyfom")
+SBSliderValue/base_type = &"RichTextLabel"
+SBSliderValue/colors/default_color = Color(0.866667, 0.972549, 1, 1)
+SBSliderValue/fonts/normal_font = ExtResource("1_qukq1")
+SBTitle/base_type = &"RichTextLabel"
+SBTitle/colors/default_color = Color(0.866667, 0.972549, 1, 1)
+SBTitle/colors/font_focus_color = Color(0.105882, 0.129412, 0.196078, 1)
+SBTitle/colors/font_hover_color = Color(0.105882, 0.129412, 0.196078, 1)
+SBTitle/fonts/normal_font = ExtResource("1_qukq1")
+SBValue/base_type = &"RichTextLabel"
+SBValue/colors/default_color = Color(0.866667, 0.972549, 1, 1)
+SBValue/colors/font_focus_color = Color(0.866667, 0.972549, 1, 1)
+SBValue/colors/font_hover_color = Color(0.866667, 0.972549, 1, 1)
+SBValue/fonts/normal_font = ExtResource("1_qukq1")
+SBWrapper/base_type = &"MarginContainer"
+SBWrapper/constants/margin_bottom = 0
+SBWrapper/constants/margin_left = 25
+SBWrapper/constants/margin_top = 0

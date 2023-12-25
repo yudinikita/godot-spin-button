@@ -1,0 +1,58 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://37vp0fwlih41"]
+
+[ext_resource type="Texture2D" uid="uid://ddk7qewrpuvmd" path="res://addons/spin_button/example/assets/icons/buttons/grabbers/grabber_legend.png" id="1_rk8eo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4i22f"]
+bg_color = Color(0.2511, 0.255825, 0.27, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeh8n"]
+bg_color = Color(0.203922, 0.207843, 0.219608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hgxjl"]
+bg_color = Color(0.243137, 0.247059, 0.262745, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dfuqv"]
+bg_color = Color(0.584314, 0.584314, 0.584314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fonaa"]
+bg_color = Color(0.701961, 0.701961, 0.701961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5y2m8"]
+content_margin_top = 22.0
+content_margin_bottom = 22.0
+bg_color = Color(0.215686, 0.211765, 0.231373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2f3t"]
+content_margin_left = 8.0
+content_margin_top = 10.0
+content_margin_right = 8.0
+content_margin_bottom = 10.0
+bg_color = Color(0.188235, 0.196078, 0.211765, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.376471, 0.384314, 0.4, 1)
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxFlat_4i22f")
+Button/styles/hover = SubResource("StyleBoxFlat_yeh8n")
+Button/styles/normal = SubResource("StyleBoxFlat_hgxjl")
+HSlider/icons/grabber = ExtResource("1_rk8eo")
+HSlider/icons/grabber_highlight = ExtResource("1_rk8eo")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_dfuqv")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_fonaa")
+HSlider/styles/slider = SubResource("StyleBoxFlat_5y2m8")
+SBSliderValue/base_type = &"RichTextLabel"
+SBSliderValue/styles/normal = SubResource("StyleBoxFlat_r2f3t")
+SBTitle/base_type = &"RichTextLabel"
+SBTitle/colors/default_color = Color(0.752941, 0.756863, 0.764706, 1)
+SBTitle/colors/font_focus_color = Color(1, 1, 1, 1)
+SBTitle/colors/font_hover_color = Color(1, 1, 1, 1)
+SBTitle/font_sizes/normal_font_size = 18
+SBValue/base_type = &"RichTextLabel"
+SBWrapper/base_type = &"MarginContainer"
+SBWrapper/constants/margin_bottom = 8
+SBWrapper/constants/margin_left = 16
+SBWrapper/constants/margin_right = 8
+SBWrapper/constants/margin_top = 8
