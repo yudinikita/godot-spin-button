@@ -717,7 +717,6 @@ script = ExtResource("6_1ceof")
 items = Array[String](["Value 1", "Value 2", "Value 3"])
 selected = 0
 item_count = 3
-nav_separation = 4
 title = "SpinButton"
 
 [node name="Popup" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Demos/MarginContainer/VBoxContainer/List"]
@@ -1886,7 +1885,7 @@ flat = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ValueButton2" type="OptionButton" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper"]
+[node name="ValueButton" type="OptionButton" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 0)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 0)
@@ -1903,7 +1902,7 @@ popup/item_0/id = 0
 popup/item_1/text = "www"
 popup/item_1/id = 1
 
-[node name="ValueTextContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2"]
+[node name="ValueTextContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1911,7 +1910,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ValueText" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/ValueTextContainer"]
+[node name="ValueText" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/ValueTextContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -1923,7 +1922,7 @@ scroll_active = false
 autowrap_mode = 0
 shortcut_keys_enabled = false
 
-[node name="BulletsWrapper" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2"]
+[node name="BulletsWrapper" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton"]
 clip_contents = true
 layout_mode = 1
 anchors_preset = 12
@@ -1935,90 +1934,90 @@ grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 8
 
-[node name="BulletsContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper"]
+[node name="BulletsContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper"]
 layout_mode = 2
 size_flags_vertical = 8
 alignment = 2
 
-[node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel2" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel2" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_cgmfh")
 
-[node name="Panel3" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel3" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel4" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel4" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel5" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel5" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel6" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel6" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel7" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel7" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel8" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel8" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel9" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel9" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel10" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel10" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel11" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel11" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel12" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel12" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="Panel13" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/BulletsWrapper/BulletsContainer"]
+[node name="Panel13" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/BulletsWrapper/BulletsContainer"]
 custom_minimum_size = Vector2(10, 2)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_i48s3")
 
-[node name="SliderWrapper" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2"]
+[node name="SliderWrapper" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton"]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -2027,15 +2026,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HSliderContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/SliderWrapper"]
+[node name="HSliderContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/SliderWrapper"]
 layout_mode = 2
 
-[node name="HSlider" type="HSlider" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/SliderWrapper/HSliderContainer"]
+[node name="HSlider" type="HSlider" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/SliderWrapper/HSliderContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 
-[node name="SliderValueTooltip" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/SliderWrapper/HSliderContainer/HSlider"]
+[node name="SliderValueTooltip" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/SliderWrapper/HSliderContainer/HSlider"]
 visible = false
 layout_mode = 0
 size_flags_horizontal = 4
@@ -2048,7 +2047,7 @@ scroll_active = false
 autowrap_mode = 0
 shortcut_keys_enabled = false
 
-[node name="SliderValue" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/SliderWrapper/HSliderContainer"]
+[node name="SliderValue" type="RichTextLabel" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/SliderWrapper/HSliderContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -2060,7 +2059,7 @@ scroll_active = false
 autowrap_mode = 0
 shortcut_keys_enabled = false
 
-[node name="VSliderContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton2/SliderWrapper"]
+[node name="VSliderContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Structure/MarginContainer/VBoxContainer/List/Spin/SBSpinButton/Wrapper/Container/ContentWrapper/ContentButton/ContentContainer/ValueWrapper/ValueButton/SliderWrapper"]
 visible = false
 layout_mode = 2
 
@@ -3662,6 +3661,7 @@ size_flags_vertical = 4
 icon = ExtResource("13_3opt2")
 flat = true
 
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/LogoButton" to="." method="_on_logo_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/GithubButton" to="." method="_on_github_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Demos/MarginContainer/VBoxContainer/List/Manipulation/VBoxContainer/HBoxContainer/AppendButton" to="." method="_on_append_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer2/VBoxContainer/TabContainer/Demos/MarginContainer/VBoxContainer/List/Manipulation/VBoxContainer/HBoxContainer/PrependButton" to="." method="_on_prepend_button_pressed"]

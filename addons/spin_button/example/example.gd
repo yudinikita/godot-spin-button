@@ -1,16 +1,19 @@
 extends Control
 
 const GITHUB_LINK := "https://github.com/nblackninja/godot-spin-button"
+const DEFAULT_TAB := 0
 
 var sb_manip: SBSpinButton
 var te_idx: TextEdit
 var te_item: TextEdit
+var tab_container: TabContainer
 
 
 func _ready():
 	sb_manip = find_child("ManipulationSBSpinButton")
 	te_idx = find_child("IdTextEdit")
 	te_item = find_child("ItemTextEdit")
+	tab_container = find_child("TabContainer")
 
 
 func _on_github_button_pressed():
@@ -35,3 +38,7 @@ func _on_remove_button_pressed():
 
 func _on_remove_all_button_pressed():
 	sb_manip.remove_all_items()
+
+
+func _on_logo_button_pressed():
+	tab_container.current_tab = DEFAULT_TAB
