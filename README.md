@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/nblackninja/godot-spin-button/3a06fca0578f3cc4443fac96e4e87e562d6d474c/icon.svg" alt="Godot Spin Button logo" width="150">
+   <img src="https://raw.githubusercontent.com/nblackninja/godot-spin-button/main/icon.png" alt="Godot Spin Button logo" width="150">
 </p>
 
 <h3 align="center">Spin Button</h3>
