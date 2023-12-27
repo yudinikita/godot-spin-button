@@ -4,11 +4,6 @@
 class_name SBBaseButton
 extends Button
 
-# TODO: 4) Add Themes (like GTA 5, Cyberpunk and etc.)
-# TODO: 5) Add Readme
-# TODO: 6) Add Documantation
-# TODO: 7) Send to AssetLib
-
 # region Signals
 
 ## Emitted when a button is disabled.
