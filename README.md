@@ -6,6 +6,8 @@
 
 <p align="center">
   Horizontal Selector with extended options for Godot Engine 4.x.
+  <br>
+  <a href="https://godotengine.org/asset-library/asset/2454"><strong>Addon on Asset Library »</strong></a>
 </p>
 
 # Godot Spin Button
