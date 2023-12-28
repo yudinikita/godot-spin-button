@@ -52,11 +52,53 @@ With SpinButton, you can replicate a theme from many major AAA games or you can 
 
 ![Theme of Godot Spin Button](images/theme.png)
 
-## 📚 Structure
+## 📚 Project Architecture
+
+Here is an overview of the project's file hierarchy:
+
+```json
+godot-spin-button/
+`-- addons/
+    `-- spin_button/
+        `-- src/
+            |-- core/
+            |   |-- base_button
+            |   `-- button
+            |-- components
+            |-- controls
+            `-- modules
+```
 
 The addon has a clear structure, which is demonstrated for each button in the corresponding tab of the example.
 
 ![Structure of Godot Spin Button](images/structure.png)
+
+Here is an overview of the button hierarchy:
+
+```json
+SpinButton/
+`-- Wrapper/
+    `-- Container/
+        |-- LeftIcon
+        |-- TitleWrapper/
+        |   `-- TitleButton/
+        |       `-- TitleContainer/
+        |           |-- TitleLabel
+        |           `-- DescriptionLabel
+        |-- ContentWrapper/
+        |   `-- ContentButton/
+        |       `-- ContentContainer/
+        |           |-- PrevWrapper/
+        |           |   `-- PrevButton
+        |           |-- ValueWrapper/
+        |           |   `-- ValueButton/
+        |           |       |-- ValueText/
+        |           |       |   `-- ValueLabel
+        |           |       `-- BulletsWrapper
+        |           `-- NextWrapper/
+        |               `-- NextButton
+        `-- RightIcon
+```
 
 ## 💬 Note
 
@@ -68,6 +110,6 @@ The source code of this project is licensed under the MIT license, which can be 
 
 ---
 
-> nikitayudin782@gmail.com &nbsp;&middot;&nbsp;
+> <nikitayudin782@gmail.com> &nbsp;&middot;&nbsp;
 > GitHub [@nblackninja](https://github.com/с) &nbsp;&middot;&nbsp;
 > Telegram [@yudinikita](https://t.me/yudinikita)
