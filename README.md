@@ -50,10 +50,28 @@ Slider, link, check, checkbox and custom button.
 
 ### 1. Installation
 
-1. Download the repository.
-2. Clone the new repository locally.
-3. Copy the `addons/spin_button` folder inside your project's `addons` directory.
-4. You're all set!
+There are few options on how to include/import SpinButton into your project:
+
+#### Use SpinButton from Asset Library
+
+If you want to include SpinButton files in your project, you may use it from Asset Library.
+
+1. Open the AssetLib tab in the Godot editor.
+2. Type the name of the addon "Spin Button" in the search bar.
+3. Select the addon and click the **Download** button.
+
+#### Install from GitHub
+
+To start using the Spin Button addon in your project, follow these steps:
+
+1. Clone or download the GodotSpinButton repository from GitHub:
+
+```bash
+git clone https://github.com/nblackninja/godot-spin-button.git
+```
+
+2. Copy the `godot-spin-button/addons/spin_button` folder inside your project's `addons` directory.
+3. You're all set!
 
 ### 2. Usage
 
