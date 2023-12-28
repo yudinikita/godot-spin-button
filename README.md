@@ -56,7 +56,7 @@ With SpinButton, you can replicate a theme from many major AAA games or you can 
 
 Here is an overview of the project's file hierarchy:
 
-```json
+```
 godot-spin-button/
 `-- addons/
     `-- spin_button/
@@ -75,7 +75,7 @@ The addon has a clear structure, which is demonstrated for each button in the co
 
 Here is an overview of the button hierarchy:
 
-```json
+```
 SpinButton/
 `-- Wrapper/
     `-- Container/
