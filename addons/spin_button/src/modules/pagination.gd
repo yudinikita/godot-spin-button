@@ -1,7 +1,7 @@
 @tool
 extends RefCounted
 
-## Emmitted when a bullet is selected.
+## Emitted when a bullet is selected.
 signal bullet_selected(idx: int)
 
 const NONE_SELECTED := -1
