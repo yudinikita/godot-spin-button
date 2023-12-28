@@ -18,41 +18,27 @@ The addon adds a new "SpinButton" element that think of this thing as a dropdown
 
 ## ✨ Features
 
-- **Modular Structure**
+- **Modular Structure**: SpinButton has a modular structure and allows you to use only the necessary modules to make its size even smaller and the code clearer.
 
-SpinButton has a modular structure and allows you to use only the necessary modules to make its size even smaller and the code clearer.
+- **Rich API**: SpinButton comes with a very rich API. It allows creating your own pagination, navigation buttons, effects and many more.
 
-- **Rich API**
+- **Full Navigation Control**: SpinButton comes with all required built-in navigation elements, such as Pagination, Navigation arrows, Popup and Title with description.
 
-SpinButton comes with a very rich API. It allows creating your own pagination, navigation buttons, effects and many more.
+- **Loop mode**: SpinButton has an option to loop through the options.
 
-- **Full Navigation Control**
+- **Popup**: SpinButton comes with a popup that opens when clicked, just like OptionButton.
 
-SpinButton comes with all required built-in navigation elements, such as Pagination, Navigation arrows, Popup and Title with description.
+- **Manipulation**: SpinButton has the ability to manipulate data using methods such as Append, Prepend, Add, Remove and Remove All.
 
-- **Loop mode**
+- **Title & Description**: SpinButton comes with a title and description that can be displayed by events such as: hover, focus, always or never.
 
-SpinButton has an option to loop through the options.
+- **Keyboard control**: SpinButton allows you to control a value using the keyboard by triggering the specified event.
 
-- **Popup**
+- **Mousewheel control**: SpinButton allows you to control the value with the mouse wheel.
 
-SpinButton comes with a popup that opens when clicked, just like OptionButton.
+- **Navigation**: SpinButton has "Previous" and "Next" buttons that allow you to change values.
 
-- **Manipulation**
-
-SpinButton has the ability to manipulate data using methods such as Append, Prepend, Add, Remove and Remove All.
-
-- **Title & Description**
-
-SpinButton comes with a title and description that can be displayed by events such as: hover, focus, always or never.
-
-- **Keyboard control**
-
-- **Mousewheel control**
-
-- **Navigation**
-
-- **Icons**
+- **Icons**: SpinButton comes with icons on the left and right that can display additional information
 
 - **And many more...**
 
