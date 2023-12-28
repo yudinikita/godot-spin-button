@@ -8,7 +8,7 @@ extends SBButton
 signal item_selected(index: int)
 
 ## Emitted when the number of items changes.
-signal lenght_changed(length: int)
+signal length_changed(length: int)
 
 ## Emitted when the navigation edges are reached.
 signal edged(start: bool, end: bool)
@@ -294,7 +294,7 @@ func set_item_count(value: int) -> void:
 
 	items.resize(value)
 
-	emit_signal("lenght_changed", item_count)
+	emit_signal("length_changed", item_count)
 
 
 ## Get the number of items.
@@ -337,34 +337,34 @@ func spin_next() -> void:
 ## Items could be new item or array with such items.
 func append_item(items) -> void:
 	manipulation_module.append_item(items)
-	emit_signal("lenght_changed", item_count)
+	emit_signal("length_changed", item_count)
 
 
 ## Add new items to the beginning.
 ## Items could be new item or array with such items.
 func prepend_item(items) -> void:
 	manipulation_module.prepend_item(items)
-	emit_signal("lenght_changed", item_count)
+	emit_signal("length_changed", item_count)
 
 
 ## Add new items to the required index.
 ## Items could be new item or array with such items.
 func add_item(items, idx: int = -1) -> void:
 	manipulation_module.add_item(idx, items)
-	emit_signal("lenght_changed", item_count)
+	emit_signal("length_changed", item_count)
 
 
 ## Remove all items.
 func remove_all_items() -> void:
 	manipulation_module.remove_all_items()
-	emit_signal("lenght_changed", item_count)
+	emit_signal("length_changed", item_count)
 
 
 ## Remove selected items.
 ## items_indexes could be a number with item index to remove or array with indexes.
 func remove_item(items_indexes) -> void:
 	manipulation_module.remove_item(items_indexes)
-	emit_signal("lenght_changed", item_count)
+	emit_signal("length_changed", item_count)
 
 
 ## Returns the [member PopupMenu] contained in this button.
@@ -644,7 +644,7 @@ func _setup_signals() -> void:
 	pressed.connect(Callable(self, "_on_pressed"))
 	edged.connect(Callable(self, "_on_edged"))
 	item_selected.connect(Callable(self, "_on_item_selected"))
-	lenght_changed.connect(Callable(self, "_on_lenght_changed"))
+	length_changed.connect(Callable(self, "_on_length_changed"))
 	next_pressed.connect(Callable(self, "_on_next_button_pressed"))
 	prev_pressed.connect(Callable(self, "_on_prev_button_pressed"))
 	value_button.item_selected.connect(Callable(self, "_on_value_button_item_selected"))
@@ -714,7 +714,7 @@ func _on_item_selected(_index: int) -> void:
 		value_button.select(selected)
 
 
-func _on_lenght_changed(_index: int) -> void:
+func _on_length_changed(_index: int) -> void:
 	_update_text()
 	_update_popup_items()
 	value_button.select(selected)
