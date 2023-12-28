@@ -131,7 +131,7 @@ var description_alignment: int = Control.SIZE_SHRINK_BEGIN:
 @export var content_theme: Theme:
 	set = _set_content_theme
 
-## Theme for the content.
+## Theme for the value.
 @export var value_theme: Theme:
 	set = _set_value_theme
 
