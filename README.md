@@ -128,5 +128,5 @@ The source code of this project is licensed under the MIT license, which can be 
 ---
 
 > <nikitayudin782@gmail.com> &nbsp;&middot;&nbsp;
-> GitHub [@nblackninja](https://github.com/с) &nbsp;&middot;&nbsp;
+> GitHub [@nblackninja](https://github.com/nblackninja) &nbsp;&middot;&nbsp;
 > Telegram [@yudinikita](https://t.me/yudinikita)
