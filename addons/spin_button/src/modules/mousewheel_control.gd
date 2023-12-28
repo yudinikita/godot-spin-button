@@ -60,6 +60,8 @@ func enable() -> void:
 	enabled = true
 
 
+## Set to [code]true[/code] and will release input event and allow page left/right
+## when on edge positions (in the beginning or in the end).
 func set_edges(edge_start: bool = false, edge_end: bool = false) -> void:
 	_edge_start = edge_start
 	_edge_end = edge_end
