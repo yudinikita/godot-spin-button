@@ -46,6 +46,23 @@ Slider, link, check, checkbox and custom button.
 
 ![Features of Godot Spin Button](images/features.png)
 
+## 📝 Getting started
+
+### 1. Installation
+
+1. Download the repository.
+2. Clone the new repository locally.
+3. Copy the `addons/spin_button` folder inside your project's `addons` directory.
+4. You're all set!
+
+### 2. Usage
+
+1. Enable the addon by going to `Project -> Project Settings -> Plugins` and activating the "Spin Button" plugin.
+2. Add control on scene `Control -> BaseButton -> Button -> SBBaseButton -> SBButton`.
+3. Customize or apply a theme for the button as you wish.
+
+Happy coding!
+
 ## 🎨 Theme
 
 With SpinButton, you can replicate a theme from many major AAA games or you can create your own unique theme.
