@@ -97,6 +97,9 @@ const P_SLIDER_PRESSED := "slider_pressed"
 
 const P_ICON_MAX_WIDTH := "icon_max_width"
 
+const P_CENTER_GRABBER := "center_grabber"
+const P_GRABBER_OFFSET := "grabber_offset"
+
 # endregion
 
 var _theme: Theme:
@@ -311,6 +314,8 @@ func _apply_init_slider(control_name: String) -> void:
 	_add_icon(control_name, P_GRABBER)
 	_add_stylebox(control_name, P_GRABBER_AREA)
 	_add_stylebox(control_name, P_SLIDER)
+	_add_constant(control_name, P_CENTER_GRABBER)
+	_add_constant(control_name, P_GRABBER_OFFSET)
 
 
 func _apply_normal_label(control_name: String) -> void:
