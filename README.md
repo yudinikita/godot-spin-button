@@ -165,6 +165,10 @@ SpinButton/
         `-- RightIcon
 ```
 
+## ❓ FAQ
+
+Here you will find the most frequently asked questions relating to the project answered. See [FAQ](https://github.com/nblackninja/godot-spin-button/wiki/FAQ) for more information.
+
 ## 💬 Note
 
 If you have any suggestions or encounter any problems when using the app, please feel free to contact us by email. I am ready to help you and solve any of your problems.
