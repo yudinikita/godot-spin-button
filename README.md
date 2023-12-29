@@ -8,6 +8,9 @@
   Horizontal Selector with extended options for Godot Engine 4.x.
   <br>
   <a href="https://godotengine.org/asset-library/asset/2454"><strong>Addon on Asset Library »</strong></a>
+  <br>
+  <br>
+  <a href="https://github.com/nblackninja/godot-spin-button/wiki">Documentation</a>
 </p>
 
 # Godot Spin Button
@@ -81,11 +84,38 @@ git clone https://github.com/nblackninja/godot-spin-button.git
 
 Happy coding!
 
+## 📖 Documentation
+
+Additional documentation is available in the [Wiki](https://github.com/nblackninja/godot-spin-button/wiki) section of the GitHub page. You can also refer to the embedded comments for a more detailed understanding of specific methods and functionality.
+
+- [Home](https://github.com/nblackninja/godot-spin-button/wiki)
+- [Core](https://github.com/nblackninja/godot-spin-button/wiki/Core)
+  - [SBBaseButton](https://github.com/nblackninja/godot-spin-button/wiki/SBBaseButton)
+  - [SBButton](https://github.com/nblackninja/godot-spin-button/wiki/SBButton)
+- [Nodes](https://github.com/nblackninja/godot-spin-button/wiki/Nodes)
+  - [SBSpinButton](https://github.com/nblackninja/godot-spin-button/wiki/SBSpinButton)
+  - [SBSliderButton](https://github.com/nblackninja/godot-spin-button/wiki/SBSliderButton)
+  - [SBLinkButton](https://github.com/nblackninja/godot-spin-button/wiki/SBLinkButton)
+  - [SBCheckboxButton](https://github.com/nblackninja/godot-spin-button/wiki/SBCheckboxButton)
+  - [SBCheckButton](https://github.com/nblackninja/godot-spin-button/wiki/SBCheckButton)
+  - [SBCustomButton](https://github.com/nblackninja/godot-spin-button/wiki/SBCustomButton)
+- [Modules](https://github.com/nblackninja/godot-spin-button/wiki/Modules)
+  - [Navigation](https://github.com/nblackninja/godot-spin-button/wiki/Navigation)
+  - [Pagination](https://github.com/nblackninja/godot-spin-button/wiki/Pagination)
+  - [Manipulation](https://github.com/nblackninja/godot-spin-button/wiki/Manipulation)
+  - [Keyboard Control](https://github.com/nblackninja/godot-spin-button/wiki/Keyboard-Control)
+  - [Mousewheel Control](https://github.com/nblackninja/godot-spin-button/wiki/Mousewheel-Control)
+
 ## 🎨 Theme
 
 With SpinButton, you can replicate a theme from many major AAA games or you can create your own unique theme.
 
 ![Theme of Godot Spin Button](images/theme.png)
+
+> Creating a theme has its own peculiarities, so read the documentation on this topic to better understand how to create a theme for SpinButton.
+
+- [How to create a theme](https://github.com/nblackninja/godot-spin-button/wiki/How-to-create-a-theme)
+- [Theme Module](https://github.com/nblackninja/godot-spin-button/wiki/Theme-module)
 
 ## 📚 Project Architecture
 
