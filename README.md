@@ -11,6 +11,8 @@
   <br>
   <br>
   <a href="https://github.com/nblackninja/godot-spin-button/wiki">Documentation</a>
+  ·
+  <a href="https://yudinikita.itch.io/godot-spin-button">Itch.io</a>
 </p>
 
 # Godot Spin Button
