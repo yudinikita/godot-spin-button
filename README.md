@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/nblackninja/godot-spin-button/main/icon.png" alt="Godot Spin Button logo" width="150">
+   <img src="https://raw.githubusercontent.com/yudinikita/godot-spin-button/main/icon.png" alt="Godot Spin Button logo" width="150">
 </p>
 
 <h3 align="center">Spin Button</h3>
@@ -10,7 +10,7 @@
   <a href="https://godotengine.org/asset-library/asset/2454"><strong>Addon on Asset Library »</strong></a>
   <br>
   <br>
-  <a href="https://github.com/nblackninja/godot-spin-button/wiki">Documentation</a>
+  <a href="https://github.com/yudinikita/godot-spin-button/wiki">Documentation</a>
   ·
   <a href="https://yudinikita.itch.io/godot-spin-button">Itch.io</a>
 </p>
@@ -72,7 +72,7 @@ To start using the Spin Button addon in your project, follow these steps:
 1. Clone or download the GodotSpinButton repository from GitHub:
 
 ```bash
-git clone https://github.com/nblackninja/godot-spin-button.git
+git clone https://github.com/yudinikita/godot-spin-button.git
 ```
 
 2. Copy the `godot-spin-button/addons/spin_button` folder inside your project's `addons` directory.
@@ -88,25 +88,25 @@ Happy coding!
 
 ## 📖 Documentation
 
-Additional documentation is available in the [Wiki](https://github.com/nblackninja/godot-spin-button/wiki) section of the GitHub page. You can also refer to the embedded comments for a more detailed understanding of specific methods and functionality.
+Additional documentation is available in the [Wiki](https://github.com/yudinikita/godot-spin-button/wiki) section of the GitHub page. You can also refer to the embedded comments for a more detailed understanding of specific methods and functionality.
 
-- [Home](https://github.com/nblackninja/godot-spin-button/wiki)
-- [Core](https://github.com/nblackninja/godot-spin-button/wiki/Core)
-  - [SBBaseButton](https://github.com/nblackninja/godot-spin-button/wiki/SBBaseButton)
-  - [SBButton](https://github.com/nblackninja/godot-spin-button/wiki/SBButton)
-- [Nodes](https://github.com/nblackninja/godot-spin-button/wiki/Nodes)
-  - [SBSpinButton](https://github.com/nblackninja/godot-spin-button/wiki/SBSpinButton)
-  - [SBSliderButton](https://github.com/nblackninja/godot-spin-button/wiki/SBSliderButton)
-  - [SBLinkButton](https://github.com/nblackninja/godot-spin-button/wiki/SBLinkButton)
-  - [SBCheckboxButton](https://github.com/nblackninja/godot-spin-button/wiki/SBCheckboxButton)
-  - [SBCheckButton](https://github.com/nblackninja/godot-spin-button/wiki/SBCheckButton)
-  - [SBCustomButton](https://github.com/nblackninja/godot-spin-button/wiki/SBCustomButton)
-- [Modules](https://github.com/nblackninja/godot-spin-button/wiki/Modules)
-  - [Navigation](https://github.com/nblackninja/godot-spin-button/wiki/Navigation)
-  - [Pagination](https://github.com/nblackninja/godot-spin-button/wiki/Pagination)
-  - [Manipulation](https://github.com/nblackninja/godot-spin-button/wiki/Manipulation)
-  - [Keyboard Control](https://github.com/nblackninja/godot-spin-button/wiki/Keyboard-Control)
-  - [Mousewheel Control](https://github.com/nblackninja/godot-spin-button/wiki/Mousewheel-Control)
+- [Home](https://github.com/yudinikita/godot-spin-button/wiki)
+- [Core](https://github.com/yudinikita/godot-spin-button/wiki/Core)
+  - [SBBaseButton](https://github.com/yudinikita/godot-spin-button/wiki/SBBaseButton)
+  - [SBButton](https://github.com/yudinikita/godot-spin-button/wiki/SBButton)
+- [Nodes](https://github.com/yudinikita/godot-spin-button/wiki/Nodes)
+  - [SBSpinButton](https://github.com/yudinikita/godot-spin-button/wiki/SBSpinButton)
+  - [SBSliderButton](https://github.com/yudinikita/godot-spin-button/wiki/SBSliderButton)
+  - [SBLinkButton](https://github.com/yudinikita/godot-spin-button/wiki/SBLinkButton)
+  - [SBCheckboxButton](https://github.com/yudinikita/godot-spin-button/wiki/SBCheckboxButton)
+  - [SBCheckButton](https://github.com/yudinikita/godot-spin-button/wiki/SBCheckButton)
+  - [SBCustomButton](https://github.com/yudinikita/godot-spin-button/wiki/SBCustomButton)
+- [Modules](https://github.com/yudinikita/godot-spin-button/wiki/Modules)
+  - [Navigation](https://github.com/yudinikita/godot-spin-button/wiki/Navigation)
+  - [Pagination](https://github.com/yudinikita/godot-spin-button/wiki/Pagination)
+  - [Manipulation](https://github.com/yudinikita/godot-spin-button/wiki/Manipulation)
+  - [Keyboard Control](https://github.com/yudinikita/godot-spin-button/wiki/Keyboard-Control)
+  - [Mousewheel Control](https://github.com/yudinikita/godot-spin-button/wiki/Mousewheel-Control)
 
 ## 🎨 Theme
 
@@ -116,8 +116,8 @@ With SpinButton, you can replicate a theme from many major AAA games or you can 
 
 > Creating a theme has its own peculiarities, so read the documentation on this topic to better understand how to create a theme for SpinButton.
 
-- [How to create a theme](https://github.com/nblackninja/godot-spin-button/wiki/How-to-create-a-theme)
-- [Theme Module](https://github.com/nblackninja/godot-spin-button/wiki/Theme-module)
+- [How to create a theme](https://github.com/yudinikita/godot-spin-button/wiki/How-to-create-a-theme)
+- [Theme Module](https://github.com/yudinikita/godot-spin-button/wiki/Theme-module)
 
 ## 📚 Project Architecture
 
@@ -169,7 +169,7 @@ SpinButton/
 
 ## ❓ FAQ
 
-Here you will find the most frequently asked questions relating to the project answered. See [FAQ](https://github.com/nblackninja/godot-spin-button/wiki/FAQ) for more information.
+Here you will find the most frequently asked questions relating to the project answered. See [FAQ](https://github.com/yudinikita/godot-spin-button/wiki/FAQ) for more information.
 
 ## 💬 Note
 
@@ -181,6 +181,6 @@ The source code of this project is licensed under the MIT license, which can be 
 
 ---
 
-> <nikitayudin782@gmail.com> &nbsp;&middot;&nbsp;
-> GitHub [@nblackninja](https://github.com/nblackninja) &nbsp;&middot;&nbsp;
-> Telegram [@yudinikita](https://t.me/yudinikita)
+> Site [yudinikita.ru](https://yudinikita.ru) &nbsp;&middot;&nbsp;
+> Email <mail@yudinikita.ru> &nbsp;&middot;&nbsp;
+> GitHub [@yudinikita](https://github.com/yudinikita)
