@@ -19,7 +19,7 @@
 
 The addon adds a new "SpinButton" element that think of this thing as a dropdown but the navigation is managed by with next and previous controls. By incorporating this addon, users can conveniently choose options in a horizontal arrangement, thereby enhancing the overall user experience in Godot projects.
 
-![Preview of Godot Spin Button](images/readme_preview.png)
+![Preview of Godot Spin Button](https://github.com/yudinikita/godot-spin-button/raw/main/images/readme_preview.png)
 
 ## ✨ Features
 
@@ -49,7 +49,7 @@ The addon adds a new "SpinButton" element that think of this thing as a dropdown
 
 Slider, link, check, checkbox and custom button.
 
-![Features of Godot Spin Button](images/features.png)
+![Features of Godot Spin Button](https://github.com/yudinikita/godot-spin-button/raw/main/images/features.png)
 
 ## 📝 Getting started
 
@@ -112,7 +112,7 @@ Additional documentation is available in the [Wiki](https://github.com/yudinikit
 
 With SpinButton, you can replicate a theme from many major AAA games or you can create your own unique theme.
 
-![Theme of Godot Spin Button](images/theme.png)
+![Theme of Godot Spin Button](https://github.com/yudinikita/godot-spin-button/raw/main/images/theme.png)
 
 > Creating a theme has its own peculiarities, so read the documentation on this topic to better understand how to create a theme for SpinButton.
 
@@ -138,7 +138,7 @@ godot-spin-button/
 
 The addon has a clear structure, which is demonstrated for each button in the corresponding tab of the example.
 
-![Structure of Godot Spin Button](images/structure.png)
+![Structure of Godot Spin Button](https://github.com/yudinikita/godot-spin-button/raw/main/images/structure.png)
 
 Here is an overview of the button hierarchy:
 
