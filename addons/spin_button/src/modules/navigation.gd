@@ -20,6 +20,14 @@ var disable_on_edges: bool:
 var disabled_buttons: bool:
 	set = _set_disabled_buttons
 
+## Sets the focus mode for navigation buttons.
+var focus_mode: int = Control.FOCUS_CLICK:
+	set = _set_focus_mode
+
+## Sets the mouse filter for navigation buttons.
+var mouse_filter: int = Control.MOUSE_FILTER_STOP:
+	set = _set_mouse_filter
+
 var _initialized: bool
 var _owner: SBBaseButton
 var _edge_start: bool
@@ -78,16 +86,11 @@ func _set_focus_nav(value: bool) -> void:
 		return
 
 	if value:
-		_next.focus_mode = Control.FOCUS_NONE
-		_prev.focus_mode = Control.FOCUS_NONE
-
 		if _owner.has_focus():
 			_show_buttons()
 		else:
 			_hide_buttons()
 	else:
-		_next.focus_mode = Control.FOCUS_ALL
-		_prev.focus_mode = Control.FOCUS_ALL
 		_show_buttons()
 
 
@@ -106,6 +109,22 @@ func _set_disabled_buttons(value: bool) -> void:
 		_prev.disabled = value
 
 
+func _set_focus_mode(value: Control.FocusMode) -> void:
+	focus_mode = value
+
+	if _initialized:
+		_next.focus_mode = value
+		_prev.focus_mode = value
+
+
+func _set_mouse_filter(value: Control.MouseFilter) -> void:
+	mouse_filter = value
+
+	if _initialized:
+		_next.mouse_filter = value
+		_prev.mouse_filter = value
+
+
 func update_visible() -> void:
 	if not _initialized or not enabled:
 		return
@@ -121,9 +140,11 @@ func _init_buttons() -> void:
 	if not enabled:
 		return
 
-	if focus_nav:
-		_next.focus_mode = Control.FOCUS_NONE
-		_prev.focus_mode = Control.FOCUS_NONE
+	_next.focus_mode = focus_mode
+	_prev.focus_mode = focus_mode
+
+	_next.mouse_filter = mouse_filter
+	_prev.mouse_filter = mouse_filter
 
 	update_visible()
 

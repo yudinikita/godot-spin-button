@@ -131,10 +131,6 @@ enum ValuePlacement { LEFT, RIGHT, TOP, BOTTOM, CENTER }
 @export var nav_theme: Theme:
 	set = _set_nav_theme
 
-## The theme used for the navigation buttons.
-@export var nav_button_flat: bool = true:
-	set = _set_nav_button_flat
-
 ## The texture used for the next navigation button.
 @export var next_icon: Texture2D:
 	set = _set_next_icon
@@ -142,6 +138,19 @@ enum ValuePlacement { LEFT, RIGHT, TOP, BOTTOM, CENTER }
 ## The texture used for the previous navigation button.
 @export var prev_icon: Texture2D:
 	set = _set_prev_icon
+
+@export_subgroup("Navigation Behavior")
+## If [code]true[/code], the navigation button is flat.
+@export var nav_button_flat: bool = true:
+	set = _set_nav_button_flat
+
+## Focus mode for navigation buttons.
+@export_enum("None", "Click", "All") var nav_focus_mode: int = Control.FOCUS_CLICK:
+	set = _set_nav_focus_mode
+
+## Mouse filter for navigation buttons.
+@export_enum("Stop", "Pass", "Ignore") var nav_mouse_filter: int = Control.MOUSE_FILTER_STOP:
+	set = _set_nav_mouse_filter
 
 @export_group("Keyboard Control")
 ## Enables navigation through items using keyboard or controller.
@@ -420,14 +429,6 @@ func _set_nav_theme(value: Theme) -> void:
 		next_button.theme = value
 
 
-func _set_nav_button_flat(value: bool) -> void:
-	nav_button_flat = value
-
-	if _is_initialized:
-		prev_button.flat = value
-		next_button.flat = value
-
-
 func _set_next_icon(value: Texture2D) -> void:
 	next_icon = value
 	next_button.icon = value
@@ -438,6 +439,28 @@ func _set_prev_icon(value: Texture2D) -> void:
 	prev_icon = value
 	prev_button.icon = value
 	navigation_module.update_visible()
+
+
+func _set_nav_button_flat(value: bool) -> void:
+	nav_button_flat = value
+
+	if _is_initialized:
+		prev_button.flat = value
+		next_button.flat = value
+
+
+func _set_nav_focus_mode(value: FocusMode) -> void:
+	nav_focus_mode = value
+
+	if _is_initialized:
+		navigation_module.focus_mode = value
+
+
+func _set_nav_mouse_filter(value: MouseFilter) -> void:
+	nav_mouse_filter = value
+
+	if _is_initialized:
+		navigation_module.mouse_filter = value
 
 
 func _set_keyboard(value: bool) -> void:
@@ -509,7 +532,6 @@ func _init_navigation() -> void:
 	navigation_module.enabled = navigation
 	navigation_module.disable_on_edges = true
 	navigation_module.disabled_buttons = disabled
-	navigation_module.focus_nav = focus_nav
 
 
 func _init_keyboard_control() -> void:
@@ -535,6 +557,9 @@ func _init_modules() -> void:
 
 func _initialize_modules() -> void:
 	navigation_module.initialize(self)
+	navigation_module.focus_nav = focus_nav
+	navigation_module.focus_mode = nav_focus_mode
+	navigation_module.mouse_filter = nav_mouse_filter
 	keyboard_control.initialize(get_viewport())
 	mousewheel_control.initialize(get_viewport())
 
