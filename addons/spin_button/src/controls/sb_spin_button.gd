@@ -258,6 +258,7 @@ func set_items(value: Array[String]) -> void:
 		item_count = value.size()
 
 	manipulation_module.list = value
+	_update_popup_items()
 	_update_text()
 
 
