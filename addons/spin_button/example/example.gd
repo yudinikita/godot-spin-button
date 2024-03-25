@@ -1,6 +1,6 @@
 extends Control
 
-const GITHUB_LINK := "https://github.com/nblackninja/godot-spin-button"
+const GITHUB_LINK := "https://github.com/yudinikita/godot-spin-button"
 const DEFAULT_TAB := 0
 
 var sb_manip: SBSpinButton
