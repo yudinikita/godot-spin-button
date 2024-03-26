@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 (2024-03-26)
+
+### Bug Fixes
+
+* connect signal for change count bullets in pagination module
+
 ## 1.1.0 (2024-03-26)
 
 ### Features
