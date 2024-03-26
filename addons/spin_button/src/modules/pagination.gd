@@ -232,6 +232,7 @@ func _add_containers() -> void:
 
 func _connect_signals() -> void:
 	_owner.item_selected.connect(Callable(self, "_on_item_selected"))
+	_owner.length_changed.connect(Callable(self, "_on_length_changed"))
 	_owner.focus_entered.connect(Callable(self, "_on_owner_focus_entered"))
 	_owner.focus_exited.connect(Callable(self, "_on_owner_focus_exited"))
 
@@ -299,6 +300,10 @@ func _reset_bullets_theme() -> void:
 
 func _on_item_selected(idx: int) -> void:
 	select(idx)
+
+
+func _on_length_changed(length: int) -> void:
+	set_bullet_count(length)
 
 
 func _on_bullet_mouse_entered(id: int) -> void:
