@@ -172,6 +172,10 @@ enum ValuePlacement { LEFT, RIGHT, TOP, BOTTOM, CENTER }
 @export var keyboard_release_on_edges: bool:
 	set = _set_keyboard_release_on_edges
 
+## Set to [code]true[/code] to allow echo event.
+@export var keyboard_allow_echo: bool = false:
+	set = _set_keyboard_allow_echo
+
 ## Minimum input strength to trigger item change. Default is 0.5.
 ## See more: [method Input.get_action_strength].
 @export_range(0, 1)
@@ -481,6 +485,11 @@ func _set_keyboard_input_handled(value: bool) -> void:
 func _set_keyboard_release_on_edges(value: bool) -> void:
 	keyboard_release_on_edges = value
 	keyboard_control.release_on_edges = value
+
+
+func _set_keyboard_allow_echo(value: bool) -> void:
+	keyboard_allow_echo = value
+	keyboard_control.allow_echo = value
 
 
 func _set_keyboard_threshold_strength(value: float) -> void:
