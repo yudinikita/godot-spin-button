@@ -40,6 +40,9 @@ var input_handled: bool = true
 ## when on edge positions (in the beginning or in the end).
 var release_on_edges: bool
 
+## Set to [code]true[/code] to allow echo event.
+var allow_echo: bool = false
+
 var _viewport: Viewport
 var _edge_start: bool
 var _edge_end: bool
@@ -77,20 +80,20 @@ func input(event: InputEvent) -> void:
 		return
 
 	if (
-		event.is_action_pressed(prev_action_name)
+		event.is_action_pressed(prev_action_name, allow_echo)
 		and Input.get_action_strength(prev_action_name) > threshold_strength
 	):
 		_prev_input()
 	elif (
-		event.is_action_pressed(next_action_name)
+		event.is_action_pressed(next_action_name, allow_echo)
 		and Input.get_action_strength(next_action_name) > threshold_strength
 	):
 		_next_input()
 
 	if page_up_down:
-		if event.is_action_pressed("ui_page_down"):
+		if event.is_action_pressed("ui_page_down", allow_echo):
 			_prev_input()
-		elif event.is_action_pressed("ui_page_up"):
+		elif event.is_action_pressed("ui_page_up", allow_echo):
 			_next_input()
 
 
