@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 (2024-05-04)
+
+### Features
+
+* allow echo event in keyboard control
+
 ## 1.1.1 (2024-03-26)
 
 ### Bug Fixes
