@@ -327,24 +327,24 @@ func _set_property_theme(value: Theme) -> void:
 
 
 func _connect_signals() -> void:
-	button_disabled.connect(Callable(self, "_on_button_disabled"))
-	button_enabled.connect(Callable(self, "_on_button_disabled"))
-	next_button.pressed.connect(Callable(self, "_on_next_pressed"))
-	prev_button.pressed.connect(Callable(self, "_on_prev_pressed"))
-	value_button.pressed.connect(Callable(self, "_on_value_pressed"))
-	content_button.pressed.connect(Callable(self, "_on_content_pressed"))
-	left_icon_button.pressed.connect(Callable(self, "_on_left_icon_pressed"))
-	right_icon_button.pressed.connect(Callable(self, "_on_right_icon_pressed"))
+	button_disabled.connect(_on_button_disabled)
+	button_enabled.connect(_on_button_disabled)
+	next_button.pressed.connect(_on_next_pressed)
+	prev_button.pressed.connect(_on_prev_pressed)
+	value_button.pressed.connect(_on_value_pressed)
+	content_button.pressed.connect(_on_content_pressed)
+	left_icon_button.pressed.connect(_on_left_icon_pressed)
+	right_icon_button.pressed.connect(_on_right_icon_pressed)
 
 
 func _connect_theme_changed() -> void:
-	var theme_callable = Callable(self, "_on_theme_changed")
+	var theme_callable = _on_theme_changed
 	if not theme_changed.is_connected(theme_callable):
 		theme_changed.connect(theme_callable)
 
 
 func _disconnect_theme_changed() -> void:
-	var theme_callable = Callable(self, "_on_theme_changed")
+	var theme_callable = _on_theme_changed
 	if theme_changed.is_connected(theme_callable):
 		theme_changed.disconnect(theme_callable)
 

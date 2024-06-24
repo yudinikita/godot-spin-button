@@ -676,18 +676,18 @@ func _initialize_modules() -> void:
 
 
 func _setup_signals() -> void:
-	pressed.connect(Callable(self, "_on_pressed"))
-	edged.connect(Callable(self, "_on_edged"))
-	item_selected.connect(Callable(self, "_on_item_selected"))
-	length_changed.connect(Callable(self, "_on_length_changed"))
-	next_pressed.connect(Callable(self, "_on_next_button_pressed"))
-	prev_pressed.connect(Callable(self, "_on_prev_button_pressed"))
-	value_button.item_selected.connect(Callable(self, "_on_value_button_item_selected"))
-	keyboard_control.next_input.connect(Callable(self, "_on_next_button_pressed"))
-	keyboard_control.prev_input.connect(Callable(self, "_on_prev_button_pressed"))
-	mousewheel_control.next_input.connect(Callable(self, "_on_next_button_pressed"))
-	mousewheel_control.prev_input.connect(Callable(self, "_on_prev_button_pressed"))
-	value_button.gui_input.connect(Callable(self, "_on_value_button_gui_input"))
+	pressed.connect(_on_pressed)
+	edged.connect(_on_edged)
+	item_selected.connect(_on_item_selected)
+	length_changed.connect(_on_length_changed)
+	next_pressed.connect(_on_next_button_pressed)
+	prev_pressed.connect(_on_prev_button_pressed)
+	value_button.item_selected.connect(_on_value_button_item_selected)
+	keyboard_control.next_input.connect(_on_next_button_pressed)
+	keyboard_control.prev_input.connect(_on_prev_button_pressed)
+	mousewheel_control.next_input.connect(_on_next_button_pressed)
+	mousewheel_control.prev_input.connect(_on_prev_button_pressed)
+	value_button.gui_input.connect(_on_value_button_gui_input)
 
 
 func _setup_variables() -> void:

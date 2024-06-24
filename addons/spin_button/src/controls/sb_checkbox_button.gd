@@ -59,8 +59,8 @@ func get_checked() -> bool:
 
 
 func _setup_signals() -> void:
-	pressed.connect(Callable(self, "_on_button_pressed"))
-	value_button.pressed.connect(Callable(self, "_on_button_pressed"))
+	pressed.connect(_on_button_pressed)
+	value_button.pressed.connect(_on_button_pressed)
 
 
 func _set_checked_icon(value: Texture2D) -> void:

@@ -150,8 +150,8 @@ func _init_buttons() -> void:
 
 
 func _connect_signals() -> void:
-	_owner.focus_entered.connect(Callable(self, "_on_focus_entered"))
-	_owner.focus_exited.connect(Callable(self, "_on_focus_exited"))
+	_owner.focus_entered.connect(_on_focus_entered)
+	_owner.focus_exited.connect(_on_focus_exited)
 
 
 func _update_disable_edges() -> void:

@@ -231,19 +231,19 @@ func _add_containers() -> void:
 
 
 func _connect_signals() -> void:
-	_owner.item_selected.connect(Callable(self, "_on_item_selected"))
-	_owner.length_changed.connect(Callable(self, "_on_length_changed"))
-	_owner.focus_entered.connect(Callable(self, "_on_owner_focus_entered"))
-	_owner.focus_exited.connect(Callable(self, "_on_owner_focus_exited"))
+	_owner.item_selected.connect(_on_item_selected)
+	_owner.length_changed.connect(_on_length_changed)
+	_owner.focus_entered.connect(_on_owner_focus_entered)
+	_owner.focus_exited.connect(_on_owner_focus_exited)
 
 
 func _new_bullet(id: int) -> Panel:
 	var bullet := Panel.new()
 	bullet.name = BULLET_NAME + "@" + str(id)
 	bullet.custom_minimum_size = bullet_size
-	bullet.mouse_entered.connect(Callable(self, "_on_bullet_mouse_entered").bind(id))
-	bullet.mouse_exited.connect(Callable(self, "_on_bullet_mouse_exited").bind(id))
-	bullet.gui_input.connect(Callable(self, "_on_bullet_input").bind(id))
+	bullet.mouse_entered.connect(_on_bullet_mouse_entered.bind(id))
+	bullet.mouse_exited.connect(_on_bullet_mouse_exited.bind(id))
+	bullet.gui_input.connect(_on_bullet_input.bind(id))
 	if bullet_style:
 		_set_bullet_theme(bullet, bullet_style)
 	if fill_bullets:

@@ -29,8 +29,8 @@ func _custom_initialize() -> void:
 
 
 func _setup_signals() -> void:
-	pressed.connect(Callable(self, "_on_link_pressed"))
-	value_button.pressed.connect(Callable(self, "_on_link_pressed"))
+	pressed.connect(_on_link_pressed)
+	value_button.pressed.connect(_on_link_pressed)
 
 
 ## Sets the link text.

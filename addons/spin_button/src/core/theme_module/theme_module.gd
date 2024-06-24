@@ -140,14 +140,14 @@ func _apply_pressed_state_overrides() -> void:
 
 
 func _connect_signals() -> void:
-	_owner.mouse_entered.connect(Callable(self, "_on_owner_mouse_entered"))
-	_owner.mouse_exited.connect(Callable(self, "_on_owner_mouse_exited"))
-	_owner.focus_entered.connect(Callable(self, "_on_owner_focus_entered"))
-	_owner.focus_exited.connect(Callable(self, "_on_owner_focus_exited"))
-	_owner.button_down.connect(Callable(self, "_on_owner_button_down"))
-	_owner.button_up.connect(Callable(self, "_on_owner_button_up"))
-	_owner.button_disabled.connect(Callable(self, "_on_owner_button_disabled"))
-	_owner.button_enabled.connect(Callable(self, "_on_owner_button_enabled"))
+	_owner.mouse_entered.connect(_on_owner_mouse_entered)
+	_owner.mouse_exited.connect(_on_owner_mouse_exited)
+	_owner.focus_entered.connect(_on_owner_focus_entered)
+	_owner.focus_exited.connect(_on_owner_focus_exited)
+	_owner.button_down.connect(_on_owner_button_down)
+	_owner.button_up.connect(_on_owner_button_up)
+	_owner.button_disabled.connect(_on_owner_button_disabled)
+	_owner.button_enabled.connect(_on_owner_button_enabled)
 
 
 func _on_owner_button_disabled() -> void:
