@@ -306,11 +306,11 @@ func _set_expand_value_min_size(value: Vector2) -> void:
 
 
 func _set_property_disabled(value: bool) -> void:
+	disabled = value
 	if value:
 		emit_signal("button_disabled")
 	else:
 		emit_signal("button_enabled")
-	disabled = value
 
 
 func _set_property_theme(value: Theme) -> void:
