@@ -333,12 +333,12 @@ func _set_right_icon_mouse_filter(value: MouseFilter) -> void:
 
 
 func _custom_signals() -> void:
-	focus_entered.connect(Callable(self, "_on_slider_focus_entered"))
-	focus_exited.connect(Callable(self, "_on_slider_focus_exited"))
-	mouse_entered.connect(Callable(self, "_on_slider_mouse_entered"))
-	mouse_exited.connect(Callable(self, "_on_slider_mouse_exited"))
-	title_container.minimum_size_changed.connect(Callable(self, "_on_recalc_min_size"))
-	content_container.minimum_size_changed.connect(Callable(self, "_on_recalc_min_size"))
+	focus_entered.connect(_on_slider_focus_entered)
+	focus_exited.connect(_on_slider_focus_exited)
+	mouse_entered.connect(_on_slider_mouse_entered)
+	mouse_exited.connect(_on_slider_mouse_exited)
+	title_container.minimum_size_changed.connect(_on_recalc_min_size)
+	content_container.minimum_size_changed.connect(_on_recalc_min_size)
 
 
 func _init_controls_properties() -> void:

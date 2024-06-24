@@ -38,7 +38,7 @@ func _hide_text() -> void:
 
 
 func _connect_signals() -> void:
-	get_popup().visibility_changed.connect(Callable(self, "_on_visibility_changed"))
+	get_popup().visibility_changed.connect(_on_visibility_changed)
 
 
 func _set_is_show_popup(value: bool) -> void:

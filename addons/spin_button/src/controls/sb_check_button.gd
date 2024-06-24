@@ -125,7 +125,7 @@ func _add_check_button(text_button: String = "") -> Button:
 	var btn = Button.new()
 	_init_check_button(btn)
 	btn.text = text_button
-	btn.toggled.connect(Callable(self, "_on_button_toggled").bind(btn))
+	btn.toggled.connect(_on_button_toggled.bind(btn))
 	buttons_container.add_child(btn)
 	buttons.append(btn)
 	return btn
